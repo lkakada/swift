@@ -1,6 +1,7 @@
 //: Playground - noun: a place where people can play
 
 import UIKit
+import Foundation
 
 //Create function that greets the user by name, or by saying "Hello, World!" if no name is given
 
