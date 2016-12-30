@@ -23,6 +23,7 @@ func sayGreeting(greeting: String, toName: String? = nil){
         print("\(greeting), World!")
     }
 }
+
 print(sayGreet(name: "kakada"))
 print(sayGreet(name: ""))
 
