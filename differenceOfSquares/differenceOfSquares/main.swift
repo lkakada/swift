@@ -9,9 +9,9 @@
 import Foundation
 
 class getNumber {
-    var numbers : Double
-    init(wholeNumber: Double) {
-        numbers = [wholeNumber]
+    var numbers : [Double] = []
+    init(wholeNumber: [Double]) {
+        numbers = wholeNumber
     }
     
     var sumNumber: Double{
@@ -23,7 +23,7 @@ class getNumber {
     }
 }
 
-let sum1 = getNumber(wholeNumber = [Double] = [1,2,3])
+let sum1 = getNumber(wholeNumber: [1,2,3,4,5,6,7,8,9,10])
     print(sum1.sumNumber)
 
 func sumNumber(numbers: Double...) -> Double{

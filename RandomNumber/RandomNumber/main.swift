@@ -8,10 +8,11 @@
 
 import Foundation
 var randomNumber = 1
-var userGuess: Int? = 1
+var userGuess: Int?
 var continueGuessing = true
 var keepPlaying = true
 var input = ""
+var numberOfPlay = 0
 
 //get keyboard for the user input and strip off the newline \n
 func userInput(){
@@ -26,13 +27,13 @@ while keepPlaying {
         print("Pick a number between 0 and 100")
         userInput()
         userGuess = Int(input)
-        if userGuess != nil {
-          if userGuess == randomNumber {
+        if let newUserGuess = userGuess {
+          if newUserGuess == randomNumber {
             continueGuessing = false
             print("Correct Number!")
             }
             //nested if statement
-            else if userGuess! > randomNumber{
+            else if newUserGuess > randomNumber{
                 //user guessed too high
                 print("Your guess is too hight")
             }
